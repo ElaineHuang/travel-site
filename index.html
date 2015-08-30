@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>首頁</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/overlay.css" rel="stylesheet">
+	<link href="css/basic.css" rel="stylesheet">
+	<style type="text/css">
+
+	
+	#second h2, #fifth h2 {
+							margin: 20px;
+						  }
+	
+	#fifth h2 {
+				margin-top: 0;
+			  }
+	
+	.story .float-left .black {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 20px;
+		padding-left: 50px;
+		color: white;
+	}
+	
+	.story .float-right .white {
+		background: rgba(255, 255, 255, 0.6);
+		padding: 20px;
+		padding-left: 50px;
+		color: black;
+	}
+	
+	
+	@media screen and (min-width: 992px) and (max-width: 1200px) {
+		
+	}
+	@media screen and (min-width: 768px) and (max-width: 992px) { 
+	
+		
+	}
+	
+	@media screen and (min-width: 450px) and (max-width: 768px) { 
+	
+	}
+	
+	@media screen and (max-width: 450px) { 
+		
+	}
+	</style>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav').localScroll(800);      
+	})
+	</script>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="index.html">Google Task travel website</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="#">My Footprint</a></li>
+			<li><a href="attractions.html">Attractions</a></li>
+			<li><a href="package.html">Package Tour</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	
+	<ul id="nav">
+		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+		<li><a href="#sixth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	</ul>
+	
+	<div id="intro">
+		<div class="story">
+	    	<div class="float-left">
+			<div class = "black">
+			<h2>我帶著你，你帶著錢</h2>
+			<br>
+	        <p>親愛的，我們去旅遊吧！<br>
+			我帶著你，你帶著錢。<br>
+			普吉也好，純泰也罷，<br>
+			橫穿  馬六甲海峽，暴走  阿爾卑斯山脈。<br>
+			讓我們來一場  說走就走的旅行！<br>
+			我帶著你，你帶著錢。<br>
+			哪怕是天涯，哪怕是海角！<br>
+			我帶著你，親愛的，<br>
+			你帶著錢！你一定要帶著錢啊！<br>
+			一定啊！我還要買鬱金香呢！<br><br><br>
+			 蔣山
+			</p>
+			</div>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+	
+	<div id="second">
+		<h2>熱門生態之旅:</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class = "box">
+				<div class="view view-first" width = "remainder">  
+				 <a href = "tour1.html"><img src="images/hot1.jpg" class="img-responsive" alt = "images"/></a> 
+				</div>
+				<form action="#" method = "GET">
+				<div class = "blacktag"><p>奧萬大國家森林遊樂區
+				<input name = "title" type="text" value="奧萬大國家森林遊樂區" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+				</p></div>
+				</form>	
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+			<div class="col-md-4">
+				<div class = "box">
+				<div class="view view-first" width = "remainder">
+				 <a href = "tour2.html"><img src="images/hot2.jpg" class="img-responsive" alt = "images"/></a> 
+				</div>
+				<form action="#" method = "GET">
+				<div class = "blacktag"><p>溪頭自然教育園區
+				<input name = "title" type="text" value="溪頭自然教育園區" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+				</p></div>
+				</form>
+				
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+			<div class="col-md-4">
+				<div class = "box">
+				<div class="view view-first" width = "remainder">  
+				 <a href = "tour3.html"><img src="images/hot3.jpg" class="img-responsive" alt = "images"/></a> 
+				</div>
+				<form action="#" method = "GET">
+				<div class = "blacktag"><p>清境農場
+				<input name = "title" type="text" value="清境農場" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+				</p></div>	
+				</form>
+							
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class = "box">
+				<div class="view view-first" width = "remainder">  
+				 <a href = "tour4.html"><img src="images/hot8.jpg" class="img-responsive" alt = "images"/></a> 
+				</div> 
+				<form action="#" method = "GET">
+				<div class = "blacktag"><p>秀姑巒溪
+				<input name = "title" type="text" value="秀姑巒溪" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+				</p></div>	
+				</form>
+				
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+			<div class="col-md-4">
+				<div class = "box">
+				<div class="view view-first" width = "remainder">  
+				 <a href = "tour5.html"><img src="images/hot9.jpg" class="img-responsive" alt = "images"/></a> 
+				</div> 
+				<form action="#" method = "GET">
+				<div class = "blacktag"><p>知本國家森林遊樂區
+				<input name = "title" type="text" value="知本國家森林遊樂區" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+				</p></div>
+				</form>
+					
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+			<div class="col-md-4">
+				<div class = "box">
+				<div class="view view-first" width = "remainder">  
+				 <a href = "tour6.html"><img src="images/hot6.jpg" class="img-responsive" alt = "images"/></a> 
+				</div> 
+				<form action="#" method = "GET">
+				<div class = "blacktag"><p>翠峰湖
+				<input name = "title" type="text" value="翠峰湖" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+				</p></div>
+				</form>
+					
+				</div><!--box-->
+			</div><!--col-md-4-->
+
+		</div><!--row-->
+	</div> <!--#second-->
+	
+	<div id="third">
+		<div class="story">
+	    	<div class="float-right">
+			<div class = "white">
+			<h2>錯過</h2>
+			<br>
+	        <p>
+			錯過不代表可惜<br>
+			再見不代表緣盡<br>
+			我們一輩子都在錯過<br>
+			離開了才發現自己是多麼珍惜那些時刻<br>
+			那些對話那些笑容<br>
+			未來 不停的來<br>
+			時間 不停的走<br>
+			那些回憶的美好<br>
+			那些日子的陪伴<br>
+			謝謝你，祝福你<br>
+			‪#‎Kodak‬ Ektar 100<br>
+			24.716757, 121.154652<br>
+			<br>
+			<br>
+			JJ.Chang
+			</p>
+			</div>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+	
+	<div id="fifth">
+		<h2>熱門人文藝術之旅:</h2>
+		<div class="row">
+			<div class="col-md-4">
+			<div class = "box">
+			<div class="view view-first" width = "remainder">  
+			 <a href = "http://travel.network.com.tw/tourguide/point/showpage/1517.html"><img src="images/hot4.jpg" class="img-responsive" alt = "images"/></a> 
+			</div> 
+			<form action="#" method = "GET">
+				<div class = "blacktag"><p>Taipei 101
+				<input name = "title" type="text" value="Taipei 101" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+				</p></div>
+			</form>
+				
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+			<div class="col-md-4">
+			<div class = "box">
+			<div class="view view-first" width = "remainder">  
+			 <a href = "http://travel.network.com.tw/tourguide/point/showpage/952.html"><img src="images/hot5.jpg" class="img-responsive" alt = "images"/></a> 
+			</div> 
+			<form action="#" method = "GET">
+				<div class = "blacktag"><p>淡水老街
+				<input name = "title" type="text" value="淡水老街" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+			</p></div>	
+			</form>
+				
+			</div><!--box-->
+			</div><!--col-md-4-->
+		
+			<div class="col-md-4">
+			<div class = "box">
+			<div class="view view-first" width = "remainder">  
+			 <a href = "http://travel.network.com.tw/tourguide/point/showpage/8.html"><img src="images/hot7.jpg" class="img-responsive" alt = "images"/></a> 
+			</div> 
+			<form action="#" method = "GET">
+				<div class = "blacktag"><p>武陵農場
+				<input name = "title" type="text" value="武陵農場" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+			</p></div>	
+			</form>
+			
+			</div><!--box-->
+			</div><!--col-md-4-->
+		</div><!--row-->
+		
+		<div class="row">
+			<div class="col-md-4">
+			<div class = "box">
+			<div class="view view-first" width = "remainder">  
+			 <a href = "http://travel.network.com.tw/tourguide/point/showpage/656.html"><img src="images/hot10.jpg" class="img-responsive" alt = "images"/></a> 
+			</div> 
+			<form action="#" method = "GET">
+				<div class = "blacktag"><p>東海大學
+				<input name = "title" type="text" value="東海大學" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+			</p></div>	
+			</form>
+				
+			</div><!--box-->
+			</div><!--col-md-4-->
+			
+			<div class="col-md-4">
+			<div class = "box">
+			<div class="view view-first" width = "remainder">  
+			 <a href = "http://travel.network.com.tw/tourguide/point/showpage/163.html"><img src="images/hot11.jpg" class="img-responsive" alt = "images"/></a> 
+			</div> 
+			<form action="#" method = "GET">
+				<div class = "blacktag"><p>台南孔廟
+				<input name = "title" type="text" value="台南孔廟" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+			</p></div>
+			</form>
+					
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+			<div class="col-md-4">
+			<div class = "box">
+			<div class="view view-first" width = "remainder">  
+			 <a href = "http://travel.network.com.tw/tourguide/point/showpage/150.html"><img src="images/hot12.jpg" class="img-responsive" alt = "images"/></a> 
+			</div> 
+			<form action="#" method = "GET">
+				<div class = "blacktag"><p>赤崁樓
+				<input name = "title" type="text" value="赤崁樓" class = "hidden">
+				<button class="btn btn-default" type="submit">加入Task</button>
+				<input name = "date" type="date" class="date" required = "required">
+			</p></div>	
+			</form>
+				
+				</div><!--box-->
+			</div><!--col-md-4-->
+			
+		</div>
+	</div> <!--#fifth-->
+	
+	<div id="sixth">
+	<div align = "center"><p>Google Task小組: 陳鵬中，何靖霆，劉珀辰，李旻蒼，鄢銘宏，黃怡綾製</p></div>
+	</div> <!--#sixth-->
+</body>
+</html>

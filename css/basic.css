@@ -1,0 +1,60 @@
+body {
+			background-image: url(../images/background.jpg);
+			font-family: Microsoft YaHei,Microsoft JhengHei;
+	 }
+		
+.navbar-inverse {
+					margin: 0;
+				}
+
+.box {
+		box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+		height: auto;
+		border: SlateGray 1px solid;
+		background: white;
+		display: inline-block;
+		width: 95%;
+		margin-bottom: 30px;
+		margin-left: 20px;
+	 }
+
+.box .blacktag {
+				background: #191919;
+				color: white;
+				padding: 10px;
+				padding-left: 15px;
+			   }
+			   
+.box .whitetag {
+				background: white;
+				color: black;
+				padding: 10px;
+				padding-left: 15px;
+			   }
+
+.btn {
+		float: right;
+		margin-right: 10px;
+	 }
+			 
+.date { 
+		float: right;
+		margin-right: 10px;
+		height: 30px;
+		color: black;
+		font-size: 15px;
+	  }
+	  
+.hidden {
+			display: none;
+		}
+		
+.package {
+			background: white;
+			margin: 20px;
+			padding: 40px;
+			padding-top: 10px;
+			border-radius: 20px;
+			-moz-border-radius: 20px; /* Firefox */
+			-webkit-border-radius: 20px; /* Safari and Chrome */
+		 }

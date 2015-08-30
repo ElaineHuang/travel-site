@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Package Tour</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/basic.css" rel="stylesheet">
+	<style>
+	.btn-group {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			   }
+		 
+	.bigbox {
+				box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+				border: SlateGray 1px solid;
+				width: 100%;
+				height: 250px;
+				margin-bottom: 25px;
+				padding-right: 10px;
+				background: white;
+			}
+	
+	.btn-default {
+					float: center;
+					margin-right: 10px;
+				 }
+	
+	.images {
+				width: 380px;
+				height: 250px;
+				float: left;
+				margin-right: 20px;
+			}
+			
+	article {
+				height: 250px;
+				overflow-y: auto;
+			}
+		
+	article p {
+				font-size: 15px;
+			  }	
+		
+	form {
+			display: inline;
+		 }
+		 
+	.south, .central, .east {
+		display: none;
+	}
+	</style>
+	<script>
+		function north()
+		{
+			$(".south").css('display','none');
+			$(".east").css('display','none');
+			$(".central").css('display','none');
+			$(".north").css('display','block');
+		}
+		
+		function central()
+		{
+			$(".south").css('display','none');
+			$(".east").css('display','none');
+			$(".north").css('display','none');
+			$(".central").css('display','block');
+		}
+	
+		function south()
+		{
+			$(".central").css('display','none');
+			$(".east").css('display','none');
+			$(".north").css('display','none');
+			$(".south").css('display','block');
+		}
+		
+		function east()
+		{
+			$(".central").css('display','none');
+			$(".south").css('display','none');
+			$(".north").css('display','none');
+			$(".east").css('display','block');
+		}
+	</script>
+	
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="index.html">Google Task travel website</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">My Footprint</a></li>
+			<li class="active"><a href="#">Attractions</a></li>
+			<li><a href="package.html">Package Tour</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" onclick = "north()">北部</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" onclick = "central()">中部</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" onclick = "south()">南部</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default" onclick = "east()">東部</button>
+			  </div>
+			</div>
+			
+		<div class = "bigbox north">
+			<a href = "tour101.html">
+			<img src = "images/hot4.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			
+			<h3>Taipei 101<form action="#" method = "GET">			
+			<input name = "title" type="text" value="Taipei 101" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>	
+			<input name = "date" type="date" class="date" required = "required">			
+			</form></h3>
+			
+			<p>地址:臺北市信義區西村里8鄰信義路五段7號</p>
+			<p>電話: 02-8101-9001</p>
+			<p>開放時間:11:00–22:00 </p>
+			<p>台北101,以中國人的吉祥數字「八」（「發」的諧音）,作為設計單元。每八層樓為一個結構單元,彼此接續、層層相疊,構築整體。在外觀上形成有節奏的律動美感，開創國際摩天大樓新風格。台北101造型宛若勁竹節節高昇、柔韌有餘,象徵生生不息的中國傳統建築意涵。</p>
+			<p>資料來源: http://travel.tw.tranews.com/view/taipei/taipeiyilinyi/</p>
+			</article>
+		</div>	
+			
+		<div class = "bigbox north">
+			<a href = "tourcat.html">
+			<img src = "images/cat.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			<h3>新北，侯硐貓村<form action="#" method = "GET">
+			<input name = "title" type="text" value="新北，侯硐貓村" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>
+			<input name = "date" type="date" class="date" required = "required">
+			</form></h3>
+			
+			<p>地址:新北市瑞芳區鎮光復里柴寮路70號(猴硐火車站)</p>
+			<p>開放時間:全天開放</p>
+			<p>此處曾是日據時期全台煤產量最高的地方,也是淘金的重鎮區,更因許多猴子出沒於此而得名；但隨著時代的變遷與產業的沒落,這裡已不見當年繁華的光景,留下的只剩質樸濃厚的鄉土味與舊式的小鎮風貌。而這幾年猴硐社區則因區內的貓咪開始名聲遠播,這裡的貓咪在動保人士和居民的努力之下,得到細心的管理和照料,乾淨而不怕生,甚至也都擁有自己的名字。天氣好的時候,還可看到大貓小貓成群出來曬太陽的懶散模樣,溫馴又逗趣的樣子。</p>
+			<p>資料來源: http://travel.tw.tranews.com/view/taipei/taipeiyilinyi/</p>
+			</article>
+		</div>	
+		
+		<div class = "bigbox central">
+			<a href = "tourheart.html">
+			<img src = "images/heart.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			<h3>台中，心之芳庭<form action="#" method = "GET">
+			<input name = "title" type="text" value="台中，心之芳庭" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>
+			<input name = "date" type="date" class="date" required = "required">
+			</form></h3>
+			
+			<p>地址:台中市北屯區民政里芳庭路1號（緊鄰國際高爾夫球場）</p>
+			<P>電話:(04)2239-8900
+			<p>開放時間:平日11:00~19:30假日09:30~19:30</p>
+			<p>心之芳庭位於大坑風景區內,為台灣第一座杰和婚禮與觀光旅遊的園區,也是偶像劇熱門取景的地點。園區分為兩大區域,分別為「慶典區」及「約會區」,其中慶典區最引人注目的,莫過於「天使的祝福證婚亭」,有多少對新人在這獨一無二的證婚亭許下諾言、得到天使的祝福。另外,偶像劇曾到此取景的「許諾禮堂」,典雅的白色建築一直是鎂光燈焦點,「歡沁會館」則是婚禮宴客的場地；慶典區建築全是純白與透明玻璃的特色建築,純淨的風格像及了新娘的白色婚紗,舉辦婚禮再適合不過了！</p>
+			<p>資料來源: http://okgo.tw/butyview.html?id=2958</p>
+			</article>
+		</div>	
+		
+		<div class = "bigbox central">
+			<a href = "tourlake.html">
+			<img src = "images/lake.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			<h3>南投，日月潭<form action="#" method = "GET">
+			<input name = "title" type="text" value="南投，日月潭" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>
+			<input name = "date" type="date" class="date" required = "required">
+			</form></h3>
+			
+			<p>地址:南投縣魚池鄉中山路599號</p>
+			<p>電話:(049)285-5668</p>
+			<p>開放時間:09:00 ~ 17:00</p>
+			<p>日詩情畫意的日月潭,兼具人文與景觀之美,是國內外頗具盛名的景點,遊日月潭可選擇搭乘遊艇、健行、騎自行車等方式暢遊,一般遊湖行程大約需兩小時,您可在碼頭租用手划船與知心伴侶倘佯在日月潭的湖光水色浪漫一下。而環湖公路全長約33公里,騎乘自行車再搭配延途各個景點作為親子休閒一日遊,不但可以健身,又可悠閒的瀏覽體會日月潭好山好水與美麗風景,是感受日月潭風情的另一個方法。來日月潭旅遊,別忘了順道品嚐美味的總統魚、小米粥等原住民風味餐,或搭乘日月潭纜車旅遊九族文化村,都可以感受日月潭週遭的旅遊風光。</p>
+			<p>資料來源:http://sunmoonlake.network.com.tw/about.asp</p>
+			</article>
+		</div>	
+		
+		<div class = "bigbox south">
+			<a href = "southernKS.html">
+			<img src = "images/Kaohsiung01.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			<h3>高雄，駁二藝術特區<form action="#" method = "GET">
+			<input name = "title" type="text" value="高雄，駁二藝術特區" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>
+			<input name = "date" type="date" class="date" required = "required">
+			</form></h3>
+			
+			<p>地址：高雄市鹽埕區大勇路1號</p>
+			<p>開放時間：週二至週日 10:00-20:00，週一及國定假日休館。</p>
+			<p>駁二藝術特區位在高雄港第三船渠內,而之所以稱為「駁二」,是因為其位於高雄第二號接駁碼頭內。在經歷高雄駁二藝術發展協會以及樹德科技大學發展地方藝術工作坊的齊心協力下,並秉著前衛、實驗、創新與高雄國際藝術平台的意涵,駁二藝術特區已成為南方實驗創作場所與工藝創意發展中心。</p>
+			<p>資料來源: 旅遊資訊王</p>		
+			</article>
+		</div>	
+		
+		<div class = "bigbox south">
+			<a href = "tourAlishan.html">
+			<img src = "images/Alishan.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			<h3>嘉義，阿里山國家風景區<form action="#" method = "GET">
+			<input name = "title" type="text" value="嘉義，阿里山國家風景區" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>
+			<input name = "date" type="date" class="date" required = "required">
+			</form></h3>
+			
+			<p>地址: 嘉義縣番路鄉觸口村觸口3-16號</p>
+			<p>電話: (05)259-3900</p>
+			<p>開放時間:全天開放</p>
+			<p>阿里山國家風景區成立於2001年,因為山脈呈現倒U型的缺口,
+			因此在夏季不會阻擋西南季風的吹拂,加上高俊山勢影響之下,平均氣溫約攝氏10度左右,
+			涼爽的氣候也成為夏季避暑的絕佳去處。而在秋冬之際,東北季風挾帶豐沛水氣影響之下,
+			翻越阿里山脈後在山谷中形成阿里山著名的雲海。而阿里山是一個橫跨熱、暖、溫、寒四帶的高山,
+			在其中也孕育著豐富的自然動植物生態,也是遊客做客阿里山不可錯過的主題之一。</p>
+			<p>資料來源: 旅遊資訊王</p>
+			</article>
+		</div>	
+		
+		<div class = "bigbox east">
+			<a href = "tourtaitung.html">
+			<img src = "images/taitung.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			<h3>台東，鹿野高台<form action="#" method = "GET">
+			<input name = "title" type="text" value="台東，鹿野高台" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>
+			<input name = "date" type="date" class="date" required = "required">
+			</form></h3>
+			
+			<p>地址：台東縣鹿野鄉永安村高台路42巷145號</p>
+			<p>電話: (089)550-797</p>
+			<p>開放時間：08:30~18:00</p>
+			<p>鹿野高台位於台東縣鹿野鄉的福鹿山休閒農莊內,由於休閒農莊周圍盡是疊疊起伏棋盤狀的農田,因此有著極為遼闊的視野。而於休閒農莊對面,則是高聳巍峨的海岸山脈,可將整個花蓮縱谷及秀麗的川流景觀盡收眼底,是一處絕佳的渡假勝地。</p>
+			<p>資料來源: http://www.tonyhuang39.com/tony1084/tony1084.html</p>
+			</article>
+		</div>	
+		
+		<div class = "bigbox east">
+			<a href = "tourhualien.html">
+			<img src = "images/hualien.jpg" alt="images" class = "images">
+			</a>
+			<article>
+			<h3>花蓮，砂卡噹步道<form action="#" method = "GET">
+			<input name = "title" type="text" value="花蓮，砂卡噹步道" class = "hidden">
+			<button class="btn btn-primary"  type="submit">加入Task</button>
+			<input name = "date" type="date" class="date" required = "required">
+			</form></h3>
+			
+			<p>地址：花蓮縣秀林鄉富世村富世291號</p>
+			<p>電話: (03)-862-1100</p>
+			<p>開放時間：08:30~16:45</p>
+			<p>砂卡礑步道之美在流水、溪石、岸壁之間的組合交映變化,也在於步道開鑿的鬼斧神工,步道通過峽谷峭壁,與山爭道,錐麓古道俯臨數百公尺的深壑懸崖,使行人震駭落膽,目眩心驚,走古道猶如歷險；而行走砂卡噹步道則可以神閒氣定,心情輕鬆的扶欄欣賞十幾公尺下方的砂卡噹溪,陶然於溪水的清湲清澈,神醉於山風的舒爽舒適。</p>
+			<p>資料來源: http://www.tonyhuang39.com/tony1084/tony1084.html</p>
+			</article>
+		</div>	
+		</div>
+			
+	</div>
+</body>
+</html>
